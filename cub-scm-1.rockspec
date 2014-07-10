@@ -14,7 +14,7 @@ description = {
 }
 
 build = {
-   type = "builtin",
-   modules = {},
-   copy_directories = {"cub"},
+   type = "command",
+   build_command = "ls",
+   install_command = "cp -r cub $(LUA_INCDIR)/"
 }
